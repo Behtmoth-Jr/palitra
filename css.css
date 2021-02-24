@@ -85,7 +85,7 @@ nav ul ul li {
     display:list-item;
     position: relative;
 }
-section {
+.all {
     background-image:url(purple.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;  
@@ -104,40 +104,35 @@ section {
     margin-top: 100px; 
 }
 
-section> div> div::before {
+.name::before {
     content: '';
     height: 3px;
     width: 20px;
     background-color:blueviolet;
     margin-right: 30px;
 }
-section> div> div::after {
+.name::after {
     content: '';
     height: 3px;
     width: 20px;
     background-color:blueviolet;
     margin-left: 30px;
 }
-section form {
+.interaction {
     display: flex;
     flex-direction: column;      
     width: 270px;
     height: 211px;
 }
-section label {
+.subtitle {
     position: absolute;
     left: 5px;
 }
-section form div {
+.component {
     position: relative;
     margin: auto;
 }
-section input {
-    width: 270px;
-    height: 40px;
-    border: none;
-}
-section select {
+.entry {
     width: 270px;
     height: 40px;
     border: none;
@@ -160,16 +155,17 @@ main{
     font-style: italic;
     font-size: 25px;
 }
-.main__item:first-of-type::after{
+.columns {
+    text-align: center;
+    display: flex;
+}
+.columns::after{
     content: '';
     display: block;
+    position: absolute;
     background-color: red;
     width: 220px;
     height: 4px;
     margin-left: 490px;
-    margin-top: 13px;
-}
-.columns {
-    text-align: center;
-    display: flex;
+    margin-top: 235px;
 }
