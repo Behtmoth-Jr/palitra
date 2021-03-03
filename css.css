@@ -9,7 +9,10 @@
 *, *:hover, *:active, *:focus {
     outline: none;
 }
-body{ margin: 0;}
+body{ 
+    margin: 0;
+    background-color: #F7F7F7;;
+}
 .header { display: flex;
     background-color:purple;
 
@@ -223,4 +226,17 @@ main{
 }
 .icon {
     width: 82px;
+}
+.indent2 {
+    margin-bottom: 70px;
+}
+.perfomance{
+    margin-top: 70px;
+}
+.perfomance::after{
+    content: "";
+    background-image: url(border.png);
+    display: block;
+    width: 1060px;
+    height: 10px;
 }
